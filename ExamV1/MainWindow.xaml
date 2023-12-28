@@ -1,0 +1,86 @@
+﻿<Window x:Class="ExamV1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExamV1"
+        mc:Ignorable="d"
+        Title="Главное окно" 
+        Height="920" 
+        Width="1850"
+        WindowState="Maximized"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid Grid.Column="0"
+                  Style="{StaticResource DataGridStyle}"
+                  ItemsSource="{Binding ClientList}"
+                  SelectedItem="{Binding SelectedClient}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Фамилия"
+                                    Width="*"
+                                    Binding="{Binding LastName}"/>
+                <DataGridTextColumn Header="Имя"
+                                    Width="*"
+                                    Binding="{Binding FirstName}"/>
+                <DataGridTextColumn Header="Отчество"
+                                    Width="*"
+                                    Binding="{Binding MiddleName}"/>
+                <DataGridTextColumn Header="Паспортные данные"    
+                                    Width="*"
+                                    Binding="{Binding Passport}"/>
+                <DataGridTextColumn Header="Страна"
+                                    Width="*"
+                                    Binding="{Binding Country}"/>
+                <DataGridTextColumn Header="Цена за сутки&#x0a;проживания"
+                                    Width="*"
+                                    Binding="{Binding CostOfDay}"/>
+                <DataGridTextColumn Header="Цена транспортных&#x0a;услуг"
+                                    Width="*"
+                                    Binding="{Binding TransportationCost}"/>
+                <DataGridTextColumn Header="Дата заезд"
+                                    Width="*"
+                                    Binding="{Binding ArrivalDate}"/>
+                <DataGridTextColumn Header="Дата выезд"
+                                    Width="*"
+                                    Binding="{Binding DepartureDate}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Grid Grid.Column="1"
+              VerticalAlignment="Stretch"
+>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Button Style="{StaticResource ActionButtonStyle}"
+                    Content="Добавить"
+                    Grid.Row="0"
+                    Command="{Binding AddCommand}"/>
+            <Button Style="{StaticResource ActionButtonStyle}"
+                    Content="Редактировать"
+                    Grid.Row="1"
+                    Command="{Binding UpdateCommand}"/>
+            <Button Style="{StaticResource ActionButtonStyle}"
+                    Content="Удалить"
+                    Grid.Row="2"
+                    Command="{Binding DeleteCommand}"/>
+            <Button Style="{StaticResource ActionButtonStyle}"
+                    Content="Открыть"
+                    Grid.Row="4"
+                    Command="{Binding OpenCommand}"/>
+            <Button Style="{StaticResource ActionButtonStyle}"
+                    Content="Сохранить"
+                    Grid.Row="5"
+                    Command="{Binding SaveCommand}"/>
+        </Grid>
+    </Grid>
+</Window>

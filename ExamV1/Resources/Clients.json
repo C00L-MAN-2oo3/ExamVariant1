@@ -1,0 +1,110 @@
+﻿[
+    {
+        "Id": "1",
+        "LastName": "Иванова",
+        "FirstName": "Татьяна",
+        "MiddleName": "Владимировна",
+        "Passport": "4619658954",
+        "Country": "Индия",
+        "CostOfDay": 6500.00,
+        "TransportationCost": 1500.00,
+        "ArrivalDate": "15/05/2020",
+        "DepartureDate": "25/05/2020"
+    },
+    {
+        "Id": "2",
+        "LastName": "Лебедев",
+        "FirstName": "Никита",
+        "MiddleName": "Семенович",
+        "Passport": "4958412589",
+        "Country": "Малайзия",
+        "CostOfDay": 2000.00,
+        "TransportationCost": 1000.00,
+        "ArrivalDate": "25/04/2021",
+        "DepartureDate": "02/05/2021"
+    },
+    {
+        "Id": "3",
+        "LastName": "Иванова",
+        "FirstName": "Милана",
+        "MiddleName": "Марковна",
+        "Passport": "2563874512",
+        "Country": "Франция",
+        "CostOfDay": 12500.00,
+        "TransportationCost": 5000.00,
+        "ArrivalDate": "10/03/2022",
+        "DepartureDate": "20/03/2022"
+    },
+    {
+        "Id": "4",
+        "LastName": "Боброва",
+        "FirstName": "Ксения",
+        "MiddleName": "Григорьевна",
+        "Passport": "3623569871",
+        "Country": "Италия",
+        "CostOfDay": 9650.00,
+        "TransportationCost": 1570.00,
+        "ArrivalDate": "11/05/2022",
+        "DepartureDate": "20/05/2022"
+    },
+    {
+        "Id": "5",
+        "LastName": "Козлова",
+        "FirstName": "Полина",
+        "MiddleName": "Андреевна",
+        "Passport": "4916256372",
+        "Country": "Польша",
+        "CostOfDay": 6000.00,
+        "TransportationCost": 2500.00,
+        "ArrivalDate": "10/01/2021",
+        "DepartureDate": "20/01/2021"
+    },
+    {
+        "Id": "6",
+        "LastName": "Поздняков",
+        "FirstName": "Лука",
+        "MiddleName": "Кириллович",
+        "Passport": "4916521148",
+        "Country": "Венгрия",
+        "CostOfDay": 9500.00,
+        "TransportationCost": 1450.00,
+        "ArrivalDate": "13/04/2022",
+        "DepartureDate": "18/04/2022"
+    },
+    {
+        "Id": "7",
+        "LastName": "Окулов",
+        "FirstName": "Богдан",
+        "MiddleName": "Елисеевич",
+        "Passport": "4916872533",
+        "Country": "Черногория",
+        "CostOfDay": 15600.00,
+        "TransportationCost": 1450.00,
+        "ArrivalDate": "21/02/2021",
+        "DepartureDate": "24/04/2021"
+    },
+    {
+        "Id": "8",
+        "LastName": "Макаров",
+        "FirstName": "Роман",
+        "MiddleName": "Романович",
+        "Passport": "4918451187",
+        "Country": "Македония",
+        "CostOfDay": 9780.00,
+        "TransportationCost": 2500.00,
+        "ArrivalDate": "14/03/2022",
+        "DepartureDate": "25/04/2022"
+    },
+    {
+        "Id": "9",
+        "LastName": "Рыжова",
+        "FirstName": "Дарья",
+        "MiddleName": "Ивановна",
+        "Passport": "1645781255",
+        "Country": "Франция",
+        "CostOfDay": 12300.00,
+        "TransportationCost": 5600.00,
+        "ArrivalDate": "03/03/2021",
+        "DepartureDate": "12/03/2021"
+    }
+]
